@@ -1,0 +1,5 @@
+[
+    {"nome":"procA","seq":["p0","p1","p2"]},
+    {"nome":"procB","seq":["p0","p1","p3","p5"]},
+    {"nome":"procc","seq":["p0","p3","p6","p8"]}
+]

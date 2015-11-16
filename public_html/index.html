@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>E-Director (Prototipo)</title>
+        <link rel="icon" type="image/png" href="favicon.gif" />
+        <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <script src="js/raphael.js" type="text/javascript"></script>
+        <script src="js/jquery-1.11.2.js" type="text/javascript"></script>
+        <script src="js/control.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="btnSetup"><img src="img/setup.png">
+                <div>
+                <div id="l1">Layout 1</div>
+                <div id="l2">Layout 2</div>
+                <div id="l3">Layout 3</div>
+                </div>
+            </div>  
+            <div id="titulo">E-Director</div>
+            <div id="logo"></div>
+        </div>
+        <div id="framelogin">
+            <table id="login">
+                <tr><td>Login:</td> <td><input type="text" id="nome" value=""/></td></tr>
+                <tr><td>Senha: </td><td><input type="password" id="senha" value=""/></td></tr>
+                <tr><td colspan="2"><div id="btnLogin">Login<img src="img/lock.png"></div><td></td>
+            <p class="error"></p>
+            </table>
+        </div>
+        <div id="menu">
+            <div class="btns" id="btnNew"><img src="img/new.png"><span>Novo Processo</span></div> 
+            <div class="btns" id="btnLoad"><img src="img/upload.png"><span>Carregar Processo</span></div>
+            <div class="btns" id="btnSave"><img src="img/save.png"><span>Salvar Processo</span></div>
+            <hr>
+            <div class="btns" id="btnAdd"><img src="img/atv.png"><span>Inserir Atividade</span></div>
+            <div class="btns" id="btnRem"><img src="img/atv-x.png"><span>Remover Atividade</span></div>            
+            <div class="btns" id="btnLabel"><img src="img/label.png"><span>Alterar Rótulo</span></div>
+            <div class="btns" id="btnCon"><img src="img/arrow.png"><span>Inseir Ligação</span></div>
+            <div class="btns" id="btnDc"><img src="img/arrow-x.png"><span>Remover Ligação</span></div>
+            <div class="btns" id="btnTip"><img src="img/tip.png"><span>Alterar Tipo</span></div>            
+            <div class="btns" id="btnOrg"><img src="img/org.png"><span>Auto Organizar</span></div>
+            <div class="btns" id="btnInfo"><img src="img/info.png"><span>Info da atividade</span></div>
+        </div>
+        <div id="canvas"></div>
+        <div id="dir"></div>
+    </body>
+</html>

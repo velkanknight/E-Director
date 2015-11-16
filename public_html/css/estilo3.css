@@ -1,0 +1,202 @@
+body {
+    background: whitesmoke;
+    color: #fff;
+    font: 300 100% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#canvas {
+    background-color: buttonface;
+    border: 1px solid;
+    border-color: activecaption;
+    display: inline-block;
+    height: 89vh;
+    width: 79%;
+    float: left;
+}
+#dir{
+    color: #888;
+    border: 1px solid;
+    border-color: activecaption;
+    display: left;
+    width: 10%;
+    height: 89vh;
+    float: right;
+}
+#menu {
+    color: #000;
+    border: 1px solid;
+    border-color: activecaption;
+    display: inline-block;
+    width: 10%;
+    height: 89vh;
+    float: left;
+}
+.btns{
+    margin-left: 40%;
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.btns span {
+    position: absolute;
+    width:150px;
+    color: #fff;
+    background: #4e8975;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.btns span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    width: 0; height: 0;
+}
+.btns:hover{
+    background-color: #8bb381;
+}
+.btns:hover span {
+    visibility: visible;
+    opacity: 0.8;
+    left: 100%;
+    margin-left: 1px;
+}
+#btnSetup{
+    margin-right: 30px;
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    float: right;
+    border-radius: 5px;
+}
+#btnSetup:hover{    
+    background-color:#8bb381;
+}
+#btnSetup:hover div{
+    display:block;
+}
+#btnSetup div{
+    position:relative;
+    background-color:#4e8975;
+    width:70px;
+    display:none;
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: activecaption;
+}
+#btnSetup div div{
+    border: 0px;
+}
+#btnSetup div div:hover{
+    background-color:#8bb381;
+}
+#logo{
+    margin-top: -40px;
+    margin-left: 45%;
+    height: 40px;
+    width: 150px;  
+    background: url('../img/logot.png')no-repeat;
+    cursor: pointer;
+}
+#header {
+    background-color:#4e8975;
+    border: 1px solid #000;
+    height: 89px;
+    float: top;
+
+}
+#titulo{
+    margin-top: 25px;
+    margin-left: 30px;
+    text-align: left;
+    font-size: 32px;
+    color:  #ccffff;
+    text-shadow: 0px 1px 0px #888, 0px 2px 0px #006699, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #006699, 0px 7px 0px #333, 0px 8px 7px #001135;
+}
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+#btnLogin {
+    margin: auto;
+    border-radius: 10px;
+    font-family: Arial;
+    font-weight: normal;
+    width: 70px;
+    color: #fff;
+    font-size: 20px;
+    background: #4e8975;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#btnLogin:hover {
+    background: #8bb381;
+    text-decoration: none;
+}
+#framelogin{
+    color: #888;
+    font-weight: bold;
+    border: 1px solid;
+    background-color: #fff;
+    border-color: activecaption;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    padding-right: -2.5px;
+    height: 75vh;
+    float: top;
+}
+#login{
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.error{
+    color: #ff0000;
+    padding: 2px;
+}
+.sucess{
+    color: #008800;
+    padding: 2px;
+}
+.btn-default {
+    border-radius: 10px;
+    font-family: Arial;
+    width: 50px;
+    color: #fff;
+    font-size: 12px;
+    background: #4e8975;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 2.5px;
+}
+.btn-defaut:hover {
+    background: #8bb381;
+    text-decoration: none;
+}
+input[type="text"], input[type="password"]{
+    border: solid 1px #888;
+    border-radius: 5px;
+    outline: none;
+}
+input[type="text"]:focus, input[type="password"]:focus{
+    border: solid 1px activecaption;
+}
